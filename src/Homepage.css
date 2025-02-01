@@ -114,8 +114,8 @@ nav ul li a:hover {
   position: absolute;
   right: 500px;
   margin-top: 800px;
-  background-color: #492ab8; /* สีพื้นหลัง */
-  color: rgb(255, 255, 255); /* สีตัวอักษร */
+  background-color: #492ab8;
+  color: rgb(255, 255, 255);
   font-size: 24px; /* ขนาดตัวอักษร */
   padding: 12px 120px; /* ขนาดปุ่ม */
   border: none; /* เอาเส้นขอบออก */
@@ -133,11 +133,11 @@ nav ul li a:hover {
   box-shadow: 0px 4px 10px rgba(35, 216, 44, 0.3);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .body-header {
-    left: 20px; /* ลดระยะห่างทางซ้าย */
-    width: 90%; /* ลดความกว้างให้พอดีหน้าจอ */
-    text-align: center; /* จัดข้อความให้ตรงกลาง */
+    left: 20px;
+    width: 90%;
+    text-align: center;
   }
 
   .body-header h1 {
@@ -170,10 +170,16 @@ nav ul li a:hover {
     top: 50px;
   }
 
-  .Download, .sign-in {
+  .Download {
     position: static;
-    margin-top: 30px;
-    left: auto;
-    right: auto;
+    padding: 10px 30px;
+    margin-top: 500px;
+    margin-right: 20px;
+  }
+
+  .sign-in {
+    position: static;
+    padding: 10px 30px;
+    margin-top: 500px;
   }
 }
