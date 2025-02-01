@@ -29,7 +29,6 @@ nav ul {
   display: flex;
   justify-content: center;
   color: white;
-  
 }
 
 nav ul li a {
@@ -38,7 +37,6 @@ nav ul li a {
   padding: 10px 20px;
   display: block;
   transition: background-color 0.3s;
-  
 }
 
 nav ul li a:hover {
@@ -133,4 +131,49 @@ nav ul li a:hover {
 
 .sign-in:hover {
   box-shadow: 0px 4px 10px rgba(35, 216, 44, 0.3);
+}
+
+@media (max-width: 768px) {
+  .body-header {
+    left: 20px; /* ลดระยะห่างทางซ้าย */
+    width: 90%; /* ลดความกว้างให้พอดีหน้าจอ */
+    text-align: center; /* จัดข้อความให้ตรงกลาง */
+  }
+
+  .body-header h1 {
+    font-size: 6vw;
+  }
+
+  .body-header h2 {
+    font-size: 4vw;
+  }
+
+  .Download, .sign-in {
+    font-size: 18px;
+    padding: 10px 40px;
+    margin-top: 20px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .Download-page {
+    font-size: 16px;
+    padding: 10px 4vw;
+  }
+
+  nav ul li a {
+    padding: 8px 15px;
+    font-size: 4vw;
+  }
+
+  .body-header {
+    top: 50px;
+  }
+
+  .Download, .sign-in {
+    position: static;
+    margin-top: 30px;
+    left: auto;
+    right: auto;
+  }
 }
